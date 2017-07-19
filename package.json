@@ -1,0 +1,69 @@
+{
+  "name": "generate-pi",
+  "version": "0.1.0",
+  "description": "Find PI(π) to the Nth Digit",
+  "main": "dist/index.js",
+  "private": true,
+  "scripts": {
+    "start": "npm run test",
+    "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "watch:test": "npm t -- --watch",
+    "test": "mocha src/index.test.js --compilers js:babel-register",
+    "cover": "nyc --reporter=lcov npm t",
+    "prebuild": "rimraf dist",
+    "build": "npm-run-all --parallel build:*",
+    "build:main": "babel --copy-files --out-dir dist --ignore *.test.js src",
+    "build:umd": "webpack --output-filename index.umd.js",
+    "build:umd.min": "webpack --output-filename index.umd.min.js -p",
+    "validate": "npm run cover && npm run check-coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/palashmon/generate-pi.git"
+  },
+  "keywords": [
+    "generate",
+    "pi",
+    "π"
+  ],
+  "author": "Palash Mondal <palashm@live.in>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/palashmon/generate-pi/issues"
+  },
+  "homepage": "https://github.com/palashmon/generate-pi#readme",
+  "devDependencies": {
+    "babel-cli": "6.23.0",
+    "babel-loader": "6.3.2",
+    "babel-preset-es2015": "6.22.0",
+    "babel-preset-stage-2": "6.22.0",
+    "babel-register": "6.23.0",
+    "chai": "3.5.0",
+    "decimal.js": "7.2.3",
+    "ghooks": "2.0.0",
+    "json-loader": "0.5.4",
+    "mocha": "3.2.0",
+    "npm-run-all": "4.0.2",
+    "nyc": "10.1.2",
+    "rimraf": "2.6.1",
+    "webpack": "2.2.1"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run validate"
+    }
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-2"
+    ]
+  }
+}

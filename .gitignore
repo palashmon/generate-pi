@@ -1,0 +1,14 @@
+node_modules/
+*.log
+dist
+.nyc_output
+
+# Ignore test-related files
+/coverage.data
+/coverage/
+
+# Ignore build package
+*.tgz
+package/
+
+.vscode/

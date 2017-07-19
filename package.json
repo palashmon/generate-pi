@@ -55,11 +55,6 @@
   "engines": {
     "node": ">= 4.0.0"
   },
-  "config": {
-    "ghooks": {
-      "pre-commit": "npm run validate"
-    }
-  },
   "babel": {
     "presets": [
       "es2015",

@@ -10,31 +10,27 @@
  * Reference    : https://en.wikipedia.org/wiki/Bailey%E2%80%93Borwein%E2%80%93Plouffe_formula
  * 
  * */
-
-var Decimal = require('decimal.js');
+const Decimal = require('decimal.js');
 Decimal.config({ precision: 200});
 
 /**
  * Function: findPI
  * @param: {integer} n - generate PI up to that many decimal places
- * deafults to 100 decimal places
+ * deafults to 200 decimal places
  */
-exports.get = (n = 200) => {
-  var p16 = new Decimal(1);
-  var pi = new Decimal(0);
+function get(n = 200) {
+  let p16 = new Decimal(1);
+  let pi = new Decimal(0);
 
   // Check the precision needed
-  var precision = Decimal.config({}).precision;
-  var one = new Decimal(1);
-  var two = new Decimal(2);
-  var four = new Decimal(4);
-  var k8 = new Decimal(0);
+  const precision = Decimal.config({}).precision;
+  const one = new Decimal(1);
+  const two = new Decimal(2);
+  const four = new Decimal(4);
+  let k8 = new Decimal(0);
 
-  for (var k = new Decimal(0); k.lte(precision); k = k.plus(one)) {
-    var f = four.div(k8.plus(1))
-      .minus(two.div(k8.plus(4)))
-      .minus(one.div(k8.plus(5)))
-      .minus(one.div(k8.plus(6)));
+  for (let k = new Decimal(0); k.lte(precision); k = k.plus(one)) {
+    const f = four.div(k8.plus(1)).minus(two.div(k8.plus(4))).minus(one.div(k8.plus(5))).minus(one.div(k8.plus(6)));
 
     pi = pi.plus(p16.times(f));
     p16 = p16.div(16);
@@ -44,4 +40,6 @@ exports.get = (n = 200) => {
   // validte number of places needed
   n = n > 200 ? 200 : n;
   return pi.toPrecision(n + 2).slice(0, -1);
-};
+}
+
+exports.get = get;

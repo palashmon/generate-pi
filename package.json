@@ -6,16 +6,13 @@
   "private": true,
   "scripts": {
     "start": "npm run test",
-    "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "watch:test": "npm t -- --watch",
     "test": "mocha src/index.test.js --compilers js:babel-register",
-    "cover": "nyc --reporter=lcov npm t",
     "prebuild": "rimraf dist",
     "build": "npm-run-all --parallel build:*",
-    "build:main": "babel --copy-files --out-dir dist --ignore *.test.js src",
+    "build:main": "babel --out-dir dist --ignore *.test.js src",
     "build:umd": "webpack --output-filename index.umd.js",
-    "build:umd.min": "webpack --output-filename index.umd.min.js -p",
-    "validate": "npm run cover && npm run check-coverage"
+    "build:umd.min": "webpack --output-filename index.umd.min.js -p"
   },
   "repository": {
     "type": "git",
@@ -53,7 +50,7 @@
     "README.md"
   ],
   "engines": {
-    "node": ">= 4.0.0"
+    "node": ">= 7.10.1"
   },
   "babel": {
     "presets": [

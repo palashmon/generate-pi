@@ -1,6 +1,6 @@
 {
   "name": "generate-pi",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Find PI(π) to the Nth Digit",
   "main": "dist/index.js",
   "private": true,

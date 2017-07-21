@@ -11,7 +11,7 @@
  * 
  * */
 var Decimal = require('decimal.js');
-Decimal.config({ precision: 200});
+Decimal.config({ precision: 300});
 
 /**
  * Function: findPI
@@ -20,6 +20,7 @@ Decimal.config({ precision: 200});
  */
 function get() {
   var n = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 200;
+  if (n === 0) return '3';  // skip calculations
 
   var p16 = new Decimal(1);
   var pi = new Decimal(0);

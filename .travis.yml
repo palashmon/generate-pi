@@ -11,7 +11,7 @@ branches:
     - master
 notifications:
   email: false
-before_install: if [[ `npm -v` != 7* ]]; then npm i -g npm@7; fi
+before_install: if [[ `npm -v` != 4* ]]; then npm i -g npm@4; fi
 install:
   - npm install
 

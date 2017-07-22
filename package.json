@@ -1,9 +1,8 @@
 {
   "name": "generate-pi",
-  "version": "0.1.2",
+  "version": "0.2.1",
   "description": "Find PI(π) to the Nth Digit",
   "main": "dist/index.js",
-  "private": true,
   "scripts": {
     "start": "npm run test",
     "watch:test": "npm t -- --watch",

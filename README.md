@@ -18,7 +18,7 @@ npm install generate-pi
 ### Usage
 
 ```javascript
-var generatePi = require('car-names');
+var generatePi = require('generate-pi');
 
 // Find PI(π) to the 10 decimal places
 var pi10 = generatePi.get(10);

@@ -20,6 +20,10 @@ npm install generate-pi
 ```javascript
 var generatePi = require('generate-pi');
 
+// Find PI(π) to the 'n' decimal places
+// where n is any number between 0 and 200
+var pi = generatePi.get(n); 
+
 // Find PI(π) to the 10 decimal places
 var pi10 = generatePi.get(10);
 // "3.1415926535"

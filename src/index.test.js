@@ -13,6 +13,10 @@ describe('start test generate-pi module', () => {
   });
 
   describe('user defined', () => {
+    it('get(\'abcd\') should be equal to 0', () => {
+      expect(generatePI.get('abcd')).to.equal('0');  
+    });
+
     it('get(0) should be equal to 3', () => {
       expect(generatePI.get(0)).to.equal('3');  
     });

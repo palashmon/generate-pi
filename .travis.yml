@@ -9,6 +9,7 @@ cache:
 branches:
   only:
     - master
+    - /^greenkeeper/.*$/
 notifications:
   email: false
 before_install: if [[ `npm -v` != 4* ]]; then npm i -g npm@4; fi

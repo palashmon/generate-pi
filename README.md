@@ -1,5 +1,7 @@
 # generate-pi
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/palashmon/generate-pi.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/palashmon/generate-pi.svg?branch=master)](https://travis-ci.org/palashmon/generate-pi)
 [![npm version](https://img.shields.io/npm/v/generate-pi.svg)](http://npm.im/generate-pi)
 [![npm downloads](https://img.shields.io/npm/dm/generate-pi.svg)](http://npm-stat.com/charts.html?package=generate-pi&from=2017-07-01)

@@ -1,12 +1,10 @@
 # generate-pi
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/palashmon/generate-pi.svg)](https://greenkeeper.io/)
-
 [![Build Status](https://travis-ci.org/palashmon/generate-pi.svg?branch=master)](https://travis-ci.org/palashmon/generate-pi)
 [![npm version](https://img.shields.io/npm/v/generate-pi.svg)](http://npm.im/generate-pi)
-[![npm downloads](https://img.shields.io/npm/dm/generate-pi.svg)](http://npm-stat.com/charts.html?package=generate-pi&from=2017-07-01)
+[![Greenkeeper badge](https://badges.greenkeeper.io/palashmon/generate-pi.svg)](https://greenkeeper.io/)
+[![npm downloads](https://img.shields.io/npm/dm/generate-pi.svg)](http://npm.im/generate-pi)
 [![Dependency Status](https://david-dm.org/palashmon/generate-pi.svg)](https://david-dm.org/palashmon/generate-pi)
-[![devDependency Status](https://david-dm.org/palashmon/generate-pi/dev-status.svg)](https://david-dm.org/palashmon/generate-pi?type=dev)
 [![MIT License](https://img.shields.io/npm/l/generate-pi.svg?colorB=0BD6D3)](http://opensource.org/licenses/MIT)
 
 Find PI(π) to the Nth Digit 

@@ -1,6 +1,6 @@
 {
   "name": "generate-pi",
-  "version": "1.4.1",
+  "version": "0.0.0-development",
   "description": "Find PI(π) to the Nth Digit",
   "main": "dist/index.js",
   "scripts": {
@@ -11,11 +11,14 @@
     "build": "npm-run-all --parallel build:*",
     "build:main": "babel --out-dir dist --ignore *.test.js src",
     "build:umd": "webpack --output-filename index.umd.js",
-    "build:umd.min": "webpack --output-filename index.umd.min.js -p"
+    "build:umd.min": "webpack --output-filename index.umd.min.js -p",
+    "precommit": "npm run test",
+    "commit": "git-cz",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/palashmon/generate-pi.git"
+    "url": "https://github.com/palashmon/generate-pi.git"
   },
   "keywords": [
     "generate",
@@ -35,18 +38,27 @@
     "babel-preset-stage-2": "~6.24.1",
     "babel-register": "~6.26.0",
     "chai": "~4.1.2",
-    "ghooks": "~2.0.0",
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.0.0",
+    "husky": "^0.14.3",
     "json-loader": "~0.5.7",
     "mocha": "~3.5.0",
     "npm-run-all": "~4.1.1",
     "nyc": "~11.2.1",
     "rimraf": "~2.6.1",
+    "semantic-release": "^7.0.2",
+    "validate-commit-msg": "^2.14.0",
     "webpack": "~3.5.6"
   },
   "files": [
     "dist",
     "README.md"
   ],
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
   "engines": {
     "node": ">= 7.10.1"
   },

@@ -59,7 +59,7 @@
         "presets": ["env"]
     },
     "dependencies": {
-        "decimal.js": "~8.0.0",
+        "decimal.js": "~9.0.0",
         "node-cache": "~4.1.1",
         "is-positive-int": "1.0.1"
     }

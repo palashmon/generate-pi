@@ -5,11 +5,9 @@
 [![Build Status](https://travis-ci.org/palashmon/generate-pi.svg?branch=master)](https://travis-ci.org/palashmon/generate-pi)
 [![npm version](https://img.shields.io/npm/v/generate-pi.svg)](http://npm.im/generate-pi)
 [![codecov](https://codecov.io/gh/palashmon/generate-pi/branch/master/graph/badge.svg)](https://codecov.io/gh/palashmon/generate-pi)
-
 [![Greenkeeper badge](https://badges.greenkeeper.io/palashmon/generate-pi.svg)](https://greenkeeper.io/)
 [![npm downloads](https://img.shields.io/npm/dm/generate-pi.svg)](http://npm.im/generate-pi)
 [![Dependency Status](https://david-dm.org/palashmon/generate-pi.svg)](https://david-dm.org/palashmon/generate-pi)
-[![MIT License](https://img.shields.io/npm/l/generate-pi.svg?colorB=0BD6D3)](http://opensource.org/licenses/MIT)
 
 ## Installation
 

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run test",
     "watch:test": "npm t -- --watch",
-    "test": "mocha src/index.test.js --compilers js:babel-register",
+    "test": "mocha src/index.test.js --compilers js:@babel/register",
     "prebuild": "rimraf dist",
     "build": "npm-run-all --parallel build:*",
     "build:main": "babel --out-dir dist --ignore *.test.js src",
@@ -34,13 +34,13 @@
   },
   "homepage": "https://github.com/palashmon/generate-pi#readme",
   "devDependencies": {
-    "@commitlint/cli": "7.0.0",
-    "@commitlint/config-angular": "7.0.1",
-    "babel-cli": "7.0.0-beta.0",
-    "babel-core": "7.0.0-beta.0",
-    "babel-loader": "~7.1.2",
-    "babel-preset-env": "2.0.0-beta.1",
-    "babel-register": "7.0.0-beta.0",
+    "@babel/cli": "^7.0.0-beta.54",
+    "@babel/core": "^7.0.0-beta.54",
+    "@babel/preset-env": "^7.0.0-beta.54",
+    "@babel/register": "^7.0.0-beta.54",
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-angular": "^7.0.1",
+    "babel-loader": "^8.0.0-beta.0",
     "chai": "^4.1.2",
     "commitizen": "2.10.0",
     "cz-conventional-changelog": "2.1.0",
@@ -55,8 +55,7 @@
   },
   "greenkeeper": {
     "ignore": [
-      "webpack",
-      "babel-loader"
+      "webpack"
     ]
   },
   "commitlint": {
@@ -78,12 +77,12 @@
   },
   "babel": {
     "presets": [
-      "env"
+      "@babel/preset-env"
     ]
   },
   "dependencies": {
     "decimal.js": "~10.0.0",
-    "node-cache": "~4.2.0",
-    "is-positive-int": "1.0.2"
+    "is-positive-int": "~1.0.2",
+    "node-cache": "~4.2.0"
   }
 }

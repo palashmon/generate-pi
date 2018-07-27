@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run test",
     "watch:test": "npm t -- --watch",
-    "test": "mocha src/index.test.js --compilers js:@babel/register",
+    "test": "mocha src/index.test.js --require @babel/register",
     "prebuild": "rimraf dist",
     "build": "npm-run-all --parallel build:*",
     "build:main": "babel --out-dir dist --ignore *.test.js src",

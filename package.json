@@ -25,7 +25,9 @@
   "keywords": [
     "generate",
     "pi",
-    "π"
+    "π",
+    "math",
+    "tiny"
   ],
   "author": "Palash Mondal <palashm@live.in>",
   "license": "MIT",
@@ -51,12 +53,8 @@
     "nyc": "^12.0.1",
     "rimraf": "^2.6.1",
     "semantic-release": "^15.0.0",
-    "webpack": "~3.11.0"
-  },
-  "greenkeeper": {
-    "ignore": [
-      "webpack"
-    ]
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0"
   },
   "commitlint": {
     "extends": [

@@ -1,19 +1,20 @@
-import {join} from 'path'
+import { join } from 'path';
 
-const include = join(__dirname, 'src')
+const include = join(__dirname, 'src');
 
 export default {
   entry: './src/index',
+  mode: 'production',
   output: {
     path: join(__dirname, 'dist'),
     libraryTarget: 'umd',
-    library: 'generatePI',
+    library: 'generatePI'
   },
   devtool: 'source-map',
   module: {
-    loaders: [
-      {test: /\.js$/, loader: 'babel-loader', include},
-      {test: /\.json$/, 'loader': 'json-loader', include},
+    rules: [
+      { test: /\.js$/, loader: 'babel-loader', include },
+      { test: /\.json$/, type: 'javascript/auto', loader: require.resolve('json-loader'), include }
     ]
   }
-}
+};

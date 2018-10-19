@@ -44,8 +44,8 @@
     "@commitlint/config-angular": "^7.0.1",
     "babel-loader": "^8.0.0-beta.0",
     "chai": "^4.1.2",
-    "commitizen": "3.0.3",
-    "cz-conventional-changelog": "2.1.0",
+    "commitizen": "^3.0.3",
+    "cz-conventional-changelog": "^2.1.0",
     "husky": "^1.0.0",
     "json-loader": "^0.5.7",
     "mocha": "^5.1.0",
@@ -79,8 +79,8 @@
     ]
   },
   "dependencies": {
-    "decimal.js": "~10.0.0",
-    "is-positive-int": "~1.0.2",
-    "node-cache": "~4.2.0"
+    "decimal.js": "^10.0.0",
+    "is-positive-int": "1.0.2",
+    "node-cache": "^4.2.0"
   }
 }

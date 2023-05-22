@@ -53,7 +53,7 @@
     "nyc": "^15.0.0",
     "rimraf": "^5.0.0",
     "semantic-release": "^21.0.1",
-    "webpack": "5.82.1",
+    "webpack": "5.83.1",
     "webpack-cli": "^5.0.2"
   },
   "commitlint": {

@@ -2,12 +2,10 @@
 
 > Find PI(π) to the Nth Digit
 
-[![Build Status](https://travis-ci.org/palashmon/generate-pi.svg?branch=master)](https://travis-ci.org/palashmon/generate-pi)
+![CI](https://github.com/palashmon/generate-pi/actions/workflows/main.yml/badge.svg?branch=master)
 [![npm version](https://img.shields.io/npm/v/generate-pi.svg)](http://npm.im/generate-pi)
 [![codecov](https://codecov.io/gh/palashmon/generate-pi/branch/master/graph/badge.svg)](https://codecov.io/gh/palashmon/generate-pi)
-
 [![npm downloads](https://img.shields.io/npm/dm/generate-pi.svg)](http://npm.im/generate-pi)
-[![Dependency Status](https://david-dm.org/palashmon/generate-pi.svg)](https://david-dm.org/palashmon/generate-pi)
 
 ## Installation
 

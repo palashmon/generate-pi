@@ -80,7 +80,7 @@
   },
   "dependencies": {
     "decimal.js": "^10.0.0",
-    "is-positive-int": "1.0.2",
+    "is-positive-int": "1.0.3",
     "node-cache": "^5.0.0"
   }
 }

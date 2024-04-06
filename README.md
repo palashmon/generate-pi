@@ -2,7 +2,7 @@
 
 > Find PI(π) to the Nth Digit
 
-![CI](https://github.com/palashmon/generate-pi/actions/workflows/main.yaml/badge.svg)
+![CI](https://github.com/palashmon/generate-pi/actions/workflows/main.yml/badge.svg)
 [![npm version](https://img.shields.io/npm/v/generate-pi.svg)](http://npm.im/generate-pi)
 [![npm downloads](https://img.shields.io/npm/dm/generate-pi.svg)](http://npm.im/generate-pi)
 

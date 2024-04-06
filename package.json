@@ -1,86 +1,65 @@
 {
-  "name": "generate-pi",
-  "version": "0.0.0-development",
-  "description": "Find PI(π) to the Nth Digit",
-  "main": "dist/index.js",
-  "scripts": {
-    "start": "npm run test",
-    "watch:test": "npm t -- --watch",
-    "test": "mocha src/index.test.js --require @babel/register",
-    "prebuild": "rimraf dist",
-    "build": "npm-run-all --parallel build:*",
-    "build:main": "babel --out-dir dist --ignore *.test.js src",
-    "build:umd": "webpack --output-filename index.umd.js",
-    "build:umd.min": "webpack --output-filename index.umd.min.js -p",
-    "precommit": "npm run test",
-    "commit": "git-cz",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "cover": "nyc --reporter=lcov npm t",
-    "commitmsg": "commitlint -e"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/palashmon/generate-pi.git"
-  },
-  "keywords": [
-    "generate",
-    "pi",
-    "π",
-    "math",
-    "tiny"
-  ],
-  "author": "Palash Mondal <palashm@live.in>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/palashmon/generate-pi/issues"
-  },
-  "homepage": "https://github.com/palashmon/generate-pi#readme",
-  "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.54",
-    "@babel/core": "^7.0.0-beta.54",
-    "@babel/preset-env": "^7.0.0-beta.54",
-    "@babel/register": "^7.0.0-beta.54",
-    "@commitlint/cli": "^18.4.3",
-    "@commitlint/config-angular": "^18.4.3",
-    "babel-loader": "^9.1.2",
-    "chai": "^5.0.0",
-    "commitizen": "^4.0.0",
-    "cz-conventional-changelog": "^3.0.0",
-    "husky": "^8.0.3",
-    "json-loader": "^0.5.7",
-    "mocha": "^10.2.0",
-    "npm-run-all": "^4.1.1",
-    "nyc": "^15.0.0",
-    "rimraf": "^5.0.0",
-    "semantic-release": "^22.0.12",
-    "webpack": "5.91.0",
-    "webpack-cli": "^5.0.2"
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-angular"
-    ]
-  },
-  "files": [
-    "dist",
-    "README.md"
-  ],
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-conventional-changelog"
-    }
-  },
-  "engines": {
-    "node": ">= 4.x"
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
-  },
-  "dependencies": {
-    "decimal.js": "^10.0.0",
-    "is-positive-int": "1.0.3",
-    "node-cache": "^5.0.0"
-  }
+	"name": "generate-pi",
+	"version": "1.6.0-beta.0",
+	"description": "Find PI(π) to the Nth Digit",
+	"license": "MIT",
+	"repository": "palashmon/generate-pi",
+	"author": "Palash Mondal <palashm@live.in>",
+	"type": "module",
+	"exports": {
+		"types": "./index.d.ts",
+		"default": "./index.js"
+	},
+	"sideEffects": false,
+	"engines": {
+		"node": ">=18"
+	},
+	"scripts": {
+		"test": "xo && ava",
+		"lint": "xo --fix"
+	},
+	"files": [
+		"index.js",
+		"index.d.ts"
+	],
+	"keywords": [
+		"algorithm",
+		"algorithmic",
+		"approximation",
+		"calc",
+		"calculation",
+		"circle",
+		"circumference",
+		"constant",
+		"decimal",
+		"diameter",
+		"generate",
+		"geometry",
+		"irrational",
+		"library",
+		"math",
+		"mathematical",
+		"mathematics",
+		"number",
+		"pi",
+		"precision",
+		"ratio",
+		"tiny",
+		"trigonometry",
+		"π"
+	],
+	"dependencies": {
+		"decimal.js": "^10.4.3",
+		"is-positive-int": "^1.1.0",
+		"node-cache": "^5.1.0"
+	},
+	"devDependencies": {
+		"ava": "^6.0.0",
+		"xo": "^0.56.0"
+	},
+	"xo": {
+		"rules": {
+			"import/no-anonymous-default-export": "off"
+		}
+	}
 }

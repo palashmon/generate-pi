@@ -4,18 +4,16 @@ on:
   - pull_request
 jobs:
   test:
-    name: Node.js ${{ matrix.node-version }}
+    name: Tests
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        node-version:
-          - 21
-          - 20
-          - 18
+        node-version: ['lts/*', 'current']
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Setting up Node.js (v${{ matrix.node-version }}.x)
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install

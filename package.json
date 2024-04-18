@@ -51,7 +51,7 @@
 	"dependencies": {
 		"decimal.js": "^10.4.3",
 		"is-positive-int": "^1.1.0",
-		"node-cache": "^5.1.0"
+		"node-cache": "^5.1.2"
 	},
 	"devDependencies": {
 		"ava": "^6.0.0",

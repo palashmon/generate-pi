@@ -1,65 +1,65 @@
 {
-	"name": "generate-pi",
-	"version": "1.6.0",
-	"description": "Find PI(π) to the Nth Digit",
-	"license": "MIT",
-	"repository": "palashmon/generate-pi",
-	"author": "Palash Mondal <palashm@live.in>",
-	"type": "module",
-	"exports": {
-		"types": "./index.d.ts",
-		"default": "./index.js"
-	},
-	"sideEffects": false,
-	"engines": {
-		"node": ">=18.20.2"
-	},
-	"scripts": {
-		"test": "xo && ava",
-		"lint": "xo --fix"
-	},
-	"files": [
-		"index.js",
-		"index.d.ts"
-	],
-	"keywords": [
-		"algorithm",
-		"algorithmic",
-		"approximation",
-		"calc",
-		"calculation",
-		"circle",
-		"circumference",
-		"constant",
-		"decimal",
-		"diameter",
-		"generate",
-		"geometry",
-		"irrational",
-		"library",
-		"math",
-		"mathematical",
-		"mathematics",
-		"number",
-		"pi",
-		"precision",
-		"ratio",
-		"tiny",
-		"trigonometry",
-		"π"
-	],
-	"dependencies": {
-		"decimal.js": "^10.4.3",
-		"is-positive-int": "^1.3.0",
-		"node-cache": "^5.1.2"
-	},
-	"devDependencies": {
-		"ava": "6.1.2",
-		"xo": "0.58.0"
-	},
-	"xo": {
-		"rules": {
-			"import/no-anonymous-default-export": "off"
-		}
-	}
+  "name": "generate-pi",
+  "version": "1.7.0",
+  "description": "Find PI(π) to the Nth Digit",
+  "license": "MIT",
+  "repository": "palashmon/generate-pi",
+  "author": "Palash Mondal <palashm@live.in>",
+  "type": "module",
+  "exports": {
+    "types": "./index.d.ts",
+    "default": "./index.js"
+  },
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18.20.2"
+  },
+  "scripts": {
+    "test": "xo && ava",
+    "lint": "xo --fix"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "keywords": [
+    "algorithm",
+    "algorithmic",
+    "approximation",
+    "calc",
+    "calculation",
+    "circle",
+    "circumference",
+    "constant",
+    "decimal",
+    "diameter",
+    "generate",
+    "geometry",
+    "irrational",
+    "library",
+    "math",
+    "mathematical",
+    "mathematics",
+    "number",
+    "pi",
+    "precision",
+    "ratio",
+    "tiny",
+    "trigonometry",
+    "π"
+  ],
+  "dependencies": {
+    "decimal.js": "^10.4.3",
+    "is-positive-int": "^1.3.0",
+    "node-cache": "^5.1.2"
+  },
+  "devDependencies": {
+    "ava": "6.1.2",
+    "xo": "0.58.0"
+  },
+  "xo": {
+    "rules": {
+      "import/no-anonymous-default-export": "off"
+    }
+  }
 }

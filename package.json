@@ -1,6 +1,6 @@
 {
   "name": "generate-pi",
-  "version": "1.11.0",
+  "version": "1.12.0",
   "description": "Find PI(π) to the Nth Digit",
   "license": "MIT",
   "repository": "palashmon/generate-pi",

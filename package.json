@@ -50,7 +50,7 @@
   ],
   "dependencies": {
     "decimal.js": "^10.4.3",
-    "is-positive-int": "^1.9.0",
+    "is-positive-int": "^1.11.0",
     "node-cache": "^5.1.2"
   },
   "devDependencies": {

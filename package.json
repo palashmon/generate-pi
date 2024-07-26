@@ -55,7 +55,7 @@
   },
   "devDependencies": {
     "ava": "6.1.3",
-    "xo": "0.59.0"
+    "xo": "0.59.2"
   },
   "xo": {
     "rules": {

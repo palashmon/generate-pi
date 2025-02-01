@@ -58,7 +58,7 @@ function get(n = 200) {
 	}
 
 	// Validate number of places needed
-	n = n > 200 ? 200 : n;
+	n = Math.min(n, 200);
 	return pi.toPrecision(n + 2).slice(0, -1);
 }
 

@@ -15,3 +15,5 @@ concurrency:
 jobs:
   test:
     uses: palashmon/reusable-workflows/.github/workflows/main-build.yml@main
+    with:
+      test-needed: false

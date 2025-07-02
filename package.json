@@ -54,8 +54,8 @@
     "node-cache": "^5.1.2"
   },
   "devDependencies": {
-    "ava": "6.3.0",
-    "xo": "0.60.0"
+    "ava": "6.4.0",
+    "xo": "0.61.1"
   },
   "xo": {
     "rules": {
